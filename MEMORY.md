@@ -354,6 +354,21 @@ a_stock_report/
 
 #### 02月
 
+**2026-02-21**
+- **长期任务维护与修复**：
+  - ✅ A股金融日报（08:30）- 发现被禁用，已重新启用
+  - ✅ Daily Profile Backup - 从凌晨 3:00 调整为上午 10:00（避开 quiet-hours）
+  - ✅ Skill Cleanup - 从凌晨 3:00 调整为周日上午 10:00（避开 quiet-hours）
+  - ✅ 确认所有 8 个长期任务正常运行
+- **Cron 任务管理机制**：
+  - 发现 OpenClaw 使用 Gateway scheduler 而非系统 crontab
+  - 学会使用 `openclaw cron list/runs/edit/enable` 命令
+  - quiet-hours (23:00-08:00) 会阻止凌晨任务执行
+- **系统监控改进**：
+  - 定期检查 `openclaw cron list` 确认任务状态
+  - 使用 `openclaw cron runs --id <id>` 查看执行历史
+  - 注意区分 "disabled" 和 "quiet-hours" 两种跳过原因
+
 **2026-02-17**
 - **A 股深度优化日报系统 v2.0.0 完成**（里程碑）：
   - 策略细分：5 大策略 → 15+ 子策略（强势动量 62%、红利防御 72%、深度价值 65%、AI 芯片映射 58%）
@@ -426,14 +441,18 @@ a_stock_report/
 
 ## 📋 长期任务清单
 
-### ✅ **已确认的长期任务**
-1. **Trump Tweet Monitor** - 每日 12:00, 20:00
-2. **原油市场日报** - 每日 12:00  
-3. **Carrier Tracker** - 每日 18:00
-4. **Self-Reflection Daily** - 每日 20:00
-5. **GitHub Profile Backup** - 每周一 8:00
-6. **Skill Cleanup** - 每周日凌晨 3:00
+### ✅ **已确认的长期任务**（更新于 2026-02-21）
+1. **Trump Tweet Monitor** - 每日 12:00, 20:00 ✅
+2. **原油市场日报** - 每日 11:30 ✅
+3. **全球新闻日报** - 每日 12:30 ✅
+4. **A股金融日报** - 每日 08:30 ✅（2026-02-21 已修复）
+5. **Carrier Tracker** - 每日 18:00 ✅
+6. **Self-Reflection Daily** - 每日 20:00 ✅
+7. **Daily Profile Backup** - 每日 10:00 ✅（2026-02-21 从凌晨 3:00 调整）
+8. **Skill Cleanup** - 每周日 10:00 ✅（2026-02-21 从凌晨 3:00 调整）
 
 ### 🔧 **任务详情**
-- **GitHub Profile Backup**: 每周自动备份 SOUL.md 和 MEMORY.md 到 GitHub 仓库 `blastai666/openclaw-profile`
-- 所有任务状态正常，无失败项
+- **Daily Profile Backup**: 每天自动备份 SOUL.md 和 MEMORY.md 到 GitHub 仓库 `blastai666/openclaw-profile`
+- **Skill Cleanup**: 每周日自动清理超过 10 天未使用的非核心技能
+- **A股金融日报**: 2026-02-21 发现被禁用，已重新启用
+- **所有任务状态正常，无失败项**
