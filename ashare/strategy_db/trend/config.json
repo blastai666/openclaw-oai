@@ -1,0 +1,12 @@
+{
+  "name": "trend",
+  "description": "趋势策略：结合情绪和产业策略中走势具备明显趋势且处于趋势下沿的高评分标的",
+  "factors": [
+    "trend_strength",
+    "support_level",
+    "moving_averages",
+    "breakout_potential"
+  ],
+  "weight": 0.2,
+  "last_updated": null
+}

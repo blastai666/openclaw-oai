@@ -12,6 +12,7 @@ _Learn about the person you're helping. Update this as you go._
 
 _(What do they care about? What projects are they working on? What annoys them? What makes them laugh? Build this over time.)_
 
+<<<<<<< Updated upstream
 ### 工作偏好
 - **任务推送**：所有长期任务执行完成或遇到问题时，必须主动推送通知
 - **推送内容**：任务状态 + 关键结果/错误信息
@@ -23,6 +24,8 @@ _(What do they care about? What projects are they working on? What annoys them? 
 - 军事动态（航母追踪）
 - 全球新闻聚合
 
+=======
+>>>>>>> Stashed changes
 ---
 
 The more you know, the better you can help. But remember — you're learning about a person, not building a dossier. Respect the difference.

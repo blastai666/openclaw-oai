@@ -1,0 +1,12 @@
+{
+  "name": "industry",
+  "description": "产业策略：基于产业景气度，寻找高景气行业中表现好的标的",
+  "factors": [
+    "industry_momentum",
+    "sector_ranking",
+    "policy_support",
+    "growth_rate"
+  ],
+  "weight": 0.2,
+  "last_updated": null
+}

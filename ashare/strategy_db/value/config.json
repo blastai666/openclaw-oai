@@ -1,0 +1,13 @@
+{
+  "name": "value",
+  "description": "价值策略：基于绝对现金流和低位估值溢价进行打分排序",
+  "factors": [
+    "cash_flow",
+    "pe_ratio",
+    "pb_ratio",
+    "dividend_yield",
+    "roe"
+  ],
+  "weight": 0.2,
+  "last_updated": null
+}

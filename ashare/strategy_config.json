@@ -1,0 +1,70 @@
+{
+  "version": "1.0",
+  "last_updated": "2026-02-22",
+  "strategies": {
+    "value_strategy": {
+      "name": "价值策略",
+      "description": "基于绝对现金流和低位估值溢价的策略",
+      "weight": 0.25,
+      "factors": {
+        "operating_cash_flow": {"weight": 0.4, "threshold": 0},
+        "free_cash_flow": {"weight": 0.3, "threshold": 0},
+        "pe_ratio": {"weight": 0.15, "threshold": 30, "direction": "lower_better"},
+        "pb_ratio": {"weight": 0.15, "threshold": 3, "direction": "lower_better"}
+      },
+      "scoring_method": "weighted_sum"
+    },
+    "industry_strategy": {
+      "name": "产业策略", 
+      "description": "基于产业景气度选择高景气行业中的优质标的",
+      "weight": 0.20,
+      "factors": {
+        "industry_growth_rate": {"weight": 0.4, "threshold": 0.1},
+        "industry_pe_ratio": {"weight": 0.2, "threshold": 25, "direction": "lower_better"},
+        "stock_industry_rank": {"weight": 0.4, "threshold": 10}
+      },
+      "scoring_method": "rank_based"
+    },
+    "sentiment_strategy": {
+      "name": "情绪策略",
+      "description": "结合动量和趋势，通过连板和板块效应突破标的",
+      "weight": 0.15,
+      "factors": {
+        "consecutive_up_days": {"weight": 0.3, "threshold": 2},
+        "volume_surge": {"weight": 0.25, "threshold": 1.5},
+        "sector_momentum": {"weight": 0.25, "threshold": 0.05},
+        "breakout_pattern": {"weight": 0.2, "threshold": 1}
+      },
+      "scoring_method": "binary_flags"
+    },
+    "trend_strategy": {
+      "name": "趋势策略",
+      "description": "结合情绪和产业策略中走势具备明显趋势且处于趋势下沿的高评分标的",
+      "weight": 0.15,
+      "factors": {
+        "trend_strength": {"weight": 0.3, "threshold": 0.7},
+        "support_level": {"weight": 0.25, "threshold": 1},
+        "moving_average_alignment": {"weight": 0.25, "threshold": 0.8},
+        "rsi_oversold": {"weight": 0.2, "threshold": 30}
+      },
+      "scoring_method": "technical_analysis"
+    },
+    "quant_strategy": {
+      "name": "量化策略",
+      "description": "做空波动率方向，反核和情绪策略中的低吸标的",
+      "weight": 0.25,
+      "factors": {
+        "volatility_contraction": {"weight": 0.3, "threshold": -0.2},
+        "mean_reversion_signal": {"weight": 0.25, "threshold": 1},
+        "low_absorption_pattern": {"weight": 0.25, "threshold": 1},
+        "gap_fill_potential": {"weight": 0.2, "threshold": 0.8}
+      },
+      "scoring_method": "statistical_arbitrage"
+    }
+  },
+  "market_conditions": {
+    "bull_market": {"value_weight": 0.2, "industry_weight": 0.25, "sentiment_weight": 0.2, "trend_weight": 0.2, "quant_weight": 0.15},
+    "bear_market": {"value_weight": 0.3, "industry_weight": 0.15, "sentiment_weight": 0.1, "trend_weight": 0.15, "quant_weight": 0.3},
+    "sideways_market": {"value_weight": 0.25, "industry_weight": 0.2, "sentiment_weight": 0.15, "trend_weight": 0.15, "quant_weight": 0.25}
+  }
+}

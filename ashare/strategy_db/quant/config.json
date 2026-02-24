@@ -1,0 +1,12 @@
+{
+  "name": "quant",
+  "description": "量化策略：做空波动率方向，主要针对反核和情绪策略中的低吸标的",
+  "factors": [
+    "volatility_score",
+    "mean_reversion",
+    "contrarian_signal",
+    "low_absorption"
+  ],
+  "weight": 0.2,
+  "last_updated": null
+}

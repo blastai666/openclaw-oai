@@ -1,0 +1,12 @@
+{
+  "name": "emotion",
+  "description": "情绪策略：结合动量和趋势，通过连板和板块效应突破标的",
+  "factors": [
+    "momentum_score",
+    "volume_surge",
+    "limit_up_count",
+    "sector_effect"
+  ],
+  "weight": 0.2,
+  "last_updated": null
+}
