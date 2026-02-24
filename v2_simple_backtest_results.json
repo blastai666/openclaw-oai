@@ -1,0 +1,37 @@
+{
+  "value": {
+    "win_rate": 0.52,
+    "avg_return": 0.006046380887781793,
+    "sharpe": 1.834483840748008,
+    "cumulative": 1.888725470326524,
+    "trades": 225
+  },
+  "industry": {
+    "win_rate": 0.52,
+    "avg_return": 0.006046380887781793,
+    "sharpe": 1.834483840748008,
+    "cumulative": 1.888725470326524,
+    "trades": 225
+  },
+  "emotion": {
+    "win_rate": 0.52,
+    "avg_return": 0.006046380887781793,
+    "sharpe": 1.834483840748008,
+    "cumulative": 1.888725470326524,
+    "trades": 225
+  },
+  "trend": {
+    "win_rate": 0.52,
+    "avg_return": 0.006046380887781793,
+    "sharpe": 1.834483840748008,
+    "cumulative": 1.888725470326524,
+    "trades": 225
+  },
+  "quant": {
+    "win_rate": 0.52,
+    "avg_return": 0.006046380887781793,
+    "sharpe": 1.834483840748008,
+    "cumulative": 1.888725470326524,
+    "trades": 225
+  }
+}

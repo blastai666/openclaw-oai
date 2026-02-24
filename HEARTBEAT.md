@@ -3,6 +3,7 @@
 # Keep this file empty (or with only comments) to skip heartbeat API calls.
 
 # Add tasks below when you want the agent to check something periodically.
+<<<<<<< Updated upstream
 
 ## Self-Reflection Check (required)
 Run `self-reflection check` at each heartbeat.
@@ -13,3 +14,5 @@ Commands:
 - `self-reflection read [n]` - Read last n reflections (default: 5)
 - `self-reflection log <tag> <miss> <fix>` - Log a new reflection
 - `self-reflection stats` - Show statistics
+=======
+>>>>>>> Stashed changes
