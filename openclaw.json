@@ -1,0 +1,630 @@
+{
+  "meta": {
+    "lastTouchedVersion": "2026.2.24",
+    "lastTouchedAt": "2026-02-27T03:42:41.941Z"
+  },
+  "wizard": {
+    "lastRunAt": "2026-02-27T03:42:41.911Z",
+    "lastRunVersion": "2026.2.24",
+    "lastRunCommand": "doctor",
+    "lastRunMode": "local"
+  },
+  "auth": {
+    "profiles": {
+      "minimax:default": {
+        "provider": "minimax",
+        "mode": "api_key"
+      },
+      "moonshot:default": {
+        "provider": "moonshot",
+        "mode": "api_key"
+      },
+      "qwen-portal:default": {
+        "provider": "qwen-portal",
+        "mode": "oauth"
+      },
+      "api-proxy-gpt:default": {
+        "provider": "api-proxy-gpt",
+        "mode": "api_key"
+      },
+      "api-proxy-claude:default": {
+        "provider": "api-proxy-claude",
+        "mode": "api_key"
+      },
+      "api-proxy-google:default": {
+        "provider": "api-proxy-google",
+        "mode": "api_key"
+      },
+      "bailian:default": {
+        "provider": "bailian",
+        "mode": "api_key"
+      },
+      "0011ai:default": {
+        "provider": "0011ai",
+        "mode": "api_key"
+      },
+      "zai:default": {
+        "provider": "zai",
+        "mode": "api_key"
+      }
+    }
+  },
+  "models": {
+    "mode": "merge",
+    "providers": {
+      "doubao": {
+        "baseUrl": "https://ark.cn-beijing.volces.com/api/v3",
+        "apiKey": "c1143737-ac58-4d2b-b101-ccaec5f600d6",
+        "api": "openai-completions",
+        "models": [
+          {
+            "id": "doubao-seed-2-0-mini-260215",
+            "name": "doubao-seed-2-0-mini",
+            "reasoning": false,
+            "input": [
+              "text"
+            ],
+            "cost": {
+              "input": 0,
+              "output": 0,
+              "cacheRead": 0,
+              "cacheWrite": 0
+            },
+            "contextWindow": 200000,
+            "maxTokens": 8192
+          }
+        ]
+      },
+      "0011ai": {
+        "baseUrl": "https://aicoding.2233.ai",
+        "apiKey": "sk-oNl370e3daf878570f3ee63bcffaacccef76f0d779bQyboj",
+        "api": "anthropic-messages",
+        "models": [
+          {
+            "id": "claude-sonnet-4-20250514",
+            "name": "claude-opus-4",
+            "reasoning": false,
+            "input": [
+              "text"
+            ],
+            "cost": {
+              "input": 0,
+              "output": 0,
+              "cacheRead": 0,
+              "cacheWrite": 0
+            },
+            "contextWindow": 200000,
+            "maxTokens": 8192
+          }
+        ]
+      },
+      "bailian": {
+        "baseUrl": "https://coding.dashscope.aliyuncs.com/v1",
+        "apiKey": "sk-sp-749dd7ddc6584e5e8da953d2f27fc865",
+        "api": "openai-completions",
+        "models": [
+          {
+            "id": "qwen3-max-2026-01-23",
+            "name": "qwen3-max-thinking",
+            "reasoning": false,
+            "input": [
+              "text"
+            ],
+            "cost": {
+              "input": 0,
+              "output": 0,
+              "cacheRead": 0,
+              "cacheWrite": 0
+            },
+            "contextWindow": 262144,
+            "maxTokens": 65536
+          }
+        ]
+      },
+      "minimax": {
+        "baseUrl": "https://api.minimax.io/anthropic",
+        "api": "anthropic-messages",
+        "models": [
+          {
+            "id": "MiniMax-M2.1",
+            "name": "MiniMax M2.1",
+            "reasoning": false,
+            "input": [
+              "text"
+            ],
+            "cost": {
+              "input": 15,
+              "output": 60,
+              "cacheRead": 2,
+              "cacheWrite": 10
+            },
+            "contextWindow": 200000,
+            "maxTokens": 8192
+          },
+          {
+            "id": "MiniMax-M2.5",
+            "name": "MiniMax M2.5",
+            "reasoning": true,
+            "input": [
+              "text"
+            ],
+            "cost": {
+              "input": 15,
+              "output": 60,
+              "cacheRead": 2,
+              "cacheWrite": 10
+            },
+            "contextWindow": 200000,
+            "maxTokens": 8192
+          },
+          {
+            "id": "MiniMax-M2.5-Lightning",
+            "name": "MiniMax M2.5 Lightning",
+            "reasoning": true,
+            "input": [
+              "text"
+            ],
+            "cost": {
+              "input": 15,
+              "output": 60,
+              "cacheRead": 2,
+              "cacheWrite": 10
+            },
+            "contextWindow": 200000,
+            "maxTokens": 8192
+          }
+        ]
+      },
+      "moonshot": {
+        "baseUrl": "https://api.moonshot.cn/v1",
+        "api": "openai-completions",
+        "models": [
+          {
+            "id": "kimi-k2.5",
+            "name": "Kimi K2.5",
+            "reasoning": false,
+            "input": [
+              "text"
+            ],
+            "cost": {
+              "input": 0,
+              "output": 0,
+              "cacheRead": 0,
+              "cacheWrite": 0
+            },
+            "contextWindow": 256000,
+            "maxTokens": 8192
+          }
+        ]
+      },
+      "qwen-portal": {
+        "baseUrl": "https://portal.qwen.ai/v1",
+        "apiKey": "qwen-oauth",
+        "api": "openai-completions",
+        "models": [
+          {
+            "id": "coder-model",
+            "name": "Qwen Coder",
+            "reasoning": false,
+            "input": [
+              "text"
+            ],
+            "cost": {
+              "input": 0,
+              "output": 0,
+              "cacheRead": 0,
+              "cacheWrite": 0
+            },
+            "contextWindow": 128000,
+            "maxTokens": 8192
+          },
+          {
+            "id": "vision-model",
+            "name": "Qwen Vision",
+            "reasoning": false,
+            "input": [
+              "text",
+              "image"
+            ],
+            "cost": {
+              "input": 0,
+              "output": 0,
+              "cacheRead": 0,
+              "cacheWrite": 0
+            },
+            "contextWindow": 128000,
+            "maxTokens": 8192
+          }
+        ]
+      },
+      "openai-custom": {
+        "baseUrl": "https://aicoding.2233.ai/v1",
+        "apiKey": "sk-oNl370e3daf878570f3ee63bcffaacccef76f0d779bQyboj",
+        "api": "openai-completions",
+        "models": [
+          {
+            "id": "gpt-5.2-codex",
+            "name": "gpt-5.2-codex",
+            "api": "openai-completions",
+            "reasoning": false,
+            "input": [
+              "text"
+            ],
+            "cost": {
+              "input": 0,
+              "output": 0,
+              "cacheRead": 0,
+              "cacheWrite": 0
+            },
+            "contextWindow": 128000,
+            "maxTokens": 8192
+          }
+        ]
+      },
+      "zai": {
+        "baseUrl": "https://open.bigmodel.cn/api/coding/paas/v4",
+        "api": "openai-completions",
+        "models": [
+          {
+            "id": "glm-5",
+            "name": "GLM-5",
+            "reasoning": true,
+            "input": [
+              "text"
+            ],
+            "cost": {
+              "input": 0,
+              "output": 0,
+              "cacheRead": 0,
+              "cacheWrite": 0
+            },
+            "contextWindow": 204800,
+            "maxTokens": 131072
+          },
+          {
+            "id": "glm-4.7",
+            "name": "GLM-4.7",
+            "reasoning": true,
+            "input": [
+              "text"
+            ],
+            "cost": {
+              "input": 0,
+              "output": 0,
+              "cacheRead": 0,
+              "cacheWrite": 0
+            },
+            "contextWindow": 204800,
+            "maxTokens": 131072
+          },
+          {
+            "id": "glm-4.7-flash",
+            "name": "GLM-4.7 Flash",
+            "reasoning": true,
+            "input": [
+              "text"
+            ],
+            "cost": {
+              "input": 0,
+              "output": 0,
+              "cacheRead": 0,
+              "cacheWrite": 0
+            },
+            "contextWindow": 204800,
+            "maxTokens": 131072
+          },
+          {
+            "id": "glm-4.7-flashx",
+            "name": "GLM-4.7 FlashX",
+            "reasoning": true,
+            "input": [
+              "text"
+            ],
+            "cost": {
+              "input": 0,
+              "output": 0,
+              "cacheRead": 0,
+              "cacheWrite": 0
+            },
+            "contextWindow": 204800,
+            "maxTokens": 131072
+          }
+        ]
+      }
+    }
+  },
+  "agents": {
+    "defaults": {
+      "model": {
+        "primary": "zai/glm-5",
+        "fallbacks": [
+          "minimax/MiniMax-M2.1",
+          "moonshot/kimi-k2.5",
+          "qwen-portal/coder-model",
+          "qwen-portal/vision-model",
+          "bailian/qwen3-max-2026-01-23",
+          "minimax/MiniMax-M2.5",
+          "minimax/MiniMax-M2.5-Lightning",
+          "0011ai/claude-sonnet-4-20250514",
+          "zai/glm-5",
+          "doubao/doubao-seed-2-0-mini-260215",
+          "openai-custom/gpt-5.2-codex"
+        ]
+      },
+      "models": {
+        "minimax/MiniMax-M2.1": {
+          "alias": "Minimax"
+        },
+        "moonshot/kimi-k2.5": {
+          "alias": "Kimi"
+        },
+        "qwen-portal/coder-model": {
+          "alias": "qwen"
+        },
+        "qwen-portal/vision-model": {},
+        "bailian/qwen3-max-2026-01-23": {
+          "alias": "qwen3-max-thinking"
+        },
+        "minimax/MiniMax-M2.5": {
+          "alias": "Minimax"
+        },
+        "minimax/MiniMax-M2.5-Lightning": {
+          "alias": "Minimax"
+        },
+        "0011ai/claude-sonnet-4-20250514": {
+          "alias": "claude-sonnet-4-20250514"
+        },
+        "zai/glm-5": {
+          "alias": "GLM"
+        },
+        "doubao/doubao-seed-2-0-mini-260215": {
+          "alias": "doubao"
+        },
+        "openai-custom/gpt-5.2-codex": {
+          "alias": "GPT"
+        }
+      },
+      "workspace": "/Users/blastai/.openclaw/workspace",
+      "compaction": {
+        "mode": "safeguard"
+      },
+      "heartbeat": {
+        "every": "60m",
+        "activeHours": {
+          "start": "08:00",
+          "end": "22:00"
+        }
+      },
+      "maxConcurrent": 4,
+      "subagents": {
+        "maxConcurrent": 8,
+        "maxSpawnDepth": 2,
+        "maxChildrenPerAgent": 5,
+        "model": "doubao/doubao-seed-2-0-mini-260215"
+      }
+    },
+    "list": [
+      {
+        "id": "main"
+      },
+      {
+        "id": "Kimi",
+        "name": "Kimi",
+        "workspace": "/Users/blastai/.openclaw/workspace-Kimi",
+        "agentDir": "/Users/blastai/.openclaw/agents/Kimi/agent",
+        "model": {
+          "primary": "moonshot/kimi-k2.5",
+          "fallbacks": [
+            "bailian/qwen3-max-2026-01-23",
+            "qwen-portal/vision-model"
+          ]
+        }
+      },
+      {
+        "id": "0011ai",
+        "name": "0011ai",
+        "workspace": "/Users/blastai/.openclaw/workspace-oai",
+        "agentDir": "/Users/blastai/.openclaw/agents/0011ai/agent",
+        "model": {
+          "primary": "openai-custom/gpt-5.2-codex"
+        }
+      },
+      {
+        "id": "ai4",
+        "name": "ai4",
+        "workspace": "/Users/blastai/.openclaw/workspace-ai4",
+        "agentDir": "/Users/blastai/.openclaw/agents/ai4/agent",
+        "model": {
+          "primary": "qwen-portal/coder-model"
+        }
+      },
+      {
+        "id": "ai5",
+        "name": "ai5",
+        "workspace": "/Users/blastai/.openclaw/workspace-ai5",
+        "agentDir": "/Users/blastai/.openclaw/agents/ai5/agent",
+        "model": {
+          "primary": "0011ai/claude-sonnet-4-20250514"
+        }
+      }
+    ]
+  },
+  "tools": {
+    "web": {
+      "search": {
+        "enabled": true,
+        "apiKey": "BSAmXZCXq1UbedbAKdi7AzdyxEVeTdV"
+      },
+      "fetch": {
+        "enabled": true
+      }
+    }
+  },
+  "bindings": [
+    {
+      "agentId": "main",
+      "match": {
+        "channel": "feishu",
+        "accountId": "openclaw"
+      }
+    },
+    {
+      "agentId": "Kimi",
+      "match": {
+        "channel": "feishu",
+        "accountId": "openclawdoubao"
+      }
+    },
+    {
+      "agentId": "0011ai",
+      "match": {
+        "channel": "feishu",
+        "accountId": "openclaw0011ai"
+      }
+    },
+    {
+      "agentId": "ai4",
+      "match": {
+        "channel": "feishu",
+        "accountId": "feishu4"
+      }
+    },
+    {
+      "agentId": "ai5",
+      "match": {
+        "channel": "feishu",
+        "accountId": "feishu5"
+      }
+    }
+  ],
+  "messages": {
+    "ackReactionScope": "group-mentions"
+  },
+  "commands": {
+    "native": "auto",
+    "nativeSkills": "auto",
+    "restart": true,
+    "ownerDisplay": "raw"
+  },
+  "session": {
+    "dmScope": "per-peer"
+  },
+  "channels": {
+    "feishu": {
+      "defaultAccount": "openclaw0011ai",
+      "accounts": {
+        "openclaw": {
+          "appId": "cli_a90e349bed789bd1",
+          "appSecret": "Sg7DR90lMWdgtqIuXbRyA40GmRfsMvxF",
+          "domain": "feishu",
+          "enabled": true
+        },
+        "openclawdoubao": {
+          "appId": "cli_a91b5d383878dcd4",
+          "appSecret": "IrYGRFFKuPy6TsX8RsykRgfphgBLaERx",
+          "domain": "feishu",
+          "enabled": true
+        },
+        "openclaw0011ai": {
+          "appId": "cli_a9180302eb781cc9",
+          "appSecret": "qBwIderodxj2conQQADyUgtAaqZ4CdVB",
+          "domain": "feishu",
+          "enabled": true
+        },
+        "feishu4": {
+          "appId": "cli_a917d358b6b99ceb",
+          "appSecret": "oEhwuvz2n1xceKtbgODkydiCfCBAGE3y",
+          "domain": "feishu",
+          "enabled": true
+        },
+        "feishu5": {
+          "appId": "cli_a917cd4d8db89cc2",
+          "appSecret": "AXw310TLPFgwZp7i0VuuIcb6tvEYwmYu",
+          "domain": "feishu",
+          "enabled": true
+        }
+      },
+      "dmPolicy": "all",
+      "groupPolicy": "open"
+    }
+  },
+  "gateway": {
+    "port": 18789,
+    "mode": "local",
+    "bind": "loopback",
+    "auth": {
+      "mode": "token",
+      "token": "4e22a59d968127a8b1143911d63e7877a19ef3de7967b4ad"
+    },
+    "tailscale": {
+      "mode": "off",
+      "resetOnExit": false
+    }
+  },
+  "memory": {},
+  "skills": {
+    "install": {
+      "nodeManager": "npm"
+    },
+    "entries": {
+      "clawgatesecure": {
+        "enabled": true,
+        "config": {
+          "audit_enabled": true,
+          "scrubber_enabled": true,
+          "encryption_enabled": true,
+          "fragmentation_check": true,
+          "keys": {
+            "encryption_key": "AUTO_GENERATED_SECURE_KEY",
+            "bypass_key": "AUTO_GENERATED_BYPASS_KEY"
+          }
+        }
+      },
+      "qmd": {
+        "enabled": true,
+        "config": {
+          "enabled": true,
+          "max_retrievals": 5,
+          "truncation_limit": 10,
+          "timeout_ms": 3000
+        }
+      },
+      "memory-hygiene": {
+        "enabled": true,
+        "config": {
+          "enabled": true,
+          "autoClean": true,
+          "cleanInterval": "24h",
+          "keepImportant": true
+        }
+      },
+      "prompt-injection-guard": {
+        "enabled": true,
+        "config": {
+          "enabled": true,
+          "mode": "tiered",
+          "cacheTTL": "1h"
+        }
+      }
+    }
+  },
+  "plugins": {
+    "entries": {
+      "qwen-portal-auth": {
+        "enabled": true
+      },
+      "feishu": {
+        "enabled": true
+      }
+    },
+    "installs": {
+      "feishu": {
+        "source": "npm",
+        "spec": "@m1heng-clawd/feishu",
+        "installPath": "/Users/blastai/.openclaw/extensions/feishu",
+        "version": "0.1.9",
+        "installedAt": "2026-02-10T03:08:27.062Z"
+      }
+    }
+  }
+}
