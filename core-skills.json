@@ -1,0 +1,18 @@
+{
+  "core_skills": [
+    "baidu-search",
+    "bird",
+    "clawgatesecure",
+    "deep-research-pro",
+    "find-skills",
+    "memory-hygiene",
+    "prompt-injection-guard",
+    "qmd",
+    "reflect-learn",
+    "search",
+    "self-reflection",
+    "news-aggregator-skill"
+  ],
+  "updated_at": "2026-02-27T14:09:00Z",
+  "note": "核心技能不会被自动清理。新安装的技能默认不在此列表中。"
+}
